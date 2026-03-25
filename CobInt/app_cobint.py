@@ -1,3 +1,11 @@
+import sys
+import os
+
+# --- ARREGLO PARA LA NUBE: Obligar al servidor a entrar a la carpeta ---
+ruta_actual = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(ruta_actual)
+os.chdir(ruta_actual) 
+
 import streamlit as st
 import pandas as pd
 import numpy as np
