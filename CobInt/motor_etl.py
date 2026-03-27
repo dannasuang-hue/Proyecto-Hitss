@@ -24,7 +24,7 @@ def procesar_estado(id_estado_str, nombre_estado, nombre_pestana_coneval):
     print(f"Iniciando extracción de datos para {nombre_estado}...")
     
     # 1 y 2. EXTRAER INEGI Y CONEVAL
-    df_inegi = pd.read_csv('iter_00_cpv2020_csv/iter_00_cpv2020/conjunto_de_datos.zip', compression='zip', dtype={'ENTIDAD': str, 'MUN': str, 'LOC': str}, low_memory=False)
+   df_inegi = pd.read_csv('iter_00_cpv2020_csv/iter_00_cpv2020/censo.zip', compression='zip', dtype={'ENTIDAD': str, 'MUN': str, 'LOC': str}, low_memory=False)
     
     df_estado = df_inegi[(df_inegi['ENTIDAD'] == id_estado_str) & (df_inegi['NOM_LOC'] != 'Total de la entidad')].copy()
     df_estado['CLAVE_UNICA'] = df_estado['ENTIDAD'].str.zfill(2) + df_estado['MUN'].str.zfill(3) + df_estado['LOC'].str.zfill(4)
