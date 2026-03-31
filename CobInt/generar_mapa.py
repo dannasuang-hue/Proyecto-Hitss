@@ -9,7 +9,7 @@ df = pd.read_csv("Ranking_Final_Oaxaca_Real.csv")
 # 1. Configuración del mapa base
 lat_centro = df['LAT_DECIMAL'].mean()
 lon_centro = df['LON_DECIMAL'].mean()
-mapa = folium.Map(location=[lat_centro, lon_centro], zoom_start=8, tiles='cartodbpositron')
+mapa = folium.Map(location=[lat_centro, lon_centro], zoom_start=8, tiles='cartodbdark_matter')
 
 # 2. Generar Mapa de Calor (Heatmap)
 print("Generando capa de calor...")
