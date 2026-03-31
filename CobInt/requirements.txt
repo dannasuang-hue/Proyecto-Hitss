@@ -5,3 +5,4 @@ networkx
 pydeck
 requests
 scikit-learn
+openpyxl
