@@ -171,7 +171,7 @@ st.markdown("""
 # 3. NUEVA CABECERA MINIMALISTA
 st.markdown("""
     <h1 class="corporate-title">CobInt</h1>
-    <div class="corporate-subtitle">Inteligencia de red para Transformación Digital • Desarrollo Global Hitss</div>
+    <div class="corporate-subtitle">Expansión de red</div>
 """, unsafe_allow_html=True)
 
 # 4. CONFIGURACIÓN LATERAL Y DICCIONARIO
